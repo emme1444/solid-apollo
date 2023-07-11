@@ -5,6 +5,9 @@
   "main": "./dist/solid-apollo.js",
   "module": "./dist/solid-apollo.mjs",
   "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "private": false,
   "homepage": "https://github.com/merged-js/solid-apollo",
   "repository": {
