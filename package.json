@@ -2,8 +2,8 @@
   "name": "@merged/solid-apollo",
   "version": "1.7.1",
   "description": "Apollo client for solid",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/es/index.js",
+  "main": "./dist/solid-apollo.js",
+  "module": "./dist/solid-apollo.mjs",
   "types": "./dist/types/index.d.ts",
   "private": false,
   "homepage": "https://github.com/merged-js/solid-apollo",
@@ -12,16 +12,17 @@
     "url": "git+https://github.com/merged-js/solid-apollo.git"
   },
   "scripts": {
-    "build": "rollup -c",
-    "watch": "rollup -cw",
+    "build": "vite build",
+    "watch": "vite build -w",
+    "check": "tsc --noEmit",
     "lint": "eslint --ext ts,tsx --max-warnings 0 --cache src",
     "commit": "cz",
     "semantic-release": "semantic-release"
   },
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
-      "default": "./dist/es/index.js"
+      "require": "./dist/solid-apollo.js",
+      "default": "./dist/solid-apollo.mjs"
     }
   },
   "keywords": [
@@ -33,24 +34,22 @@
   "license": "MIT",
   "peerDependencies": {
     "@apollo/client": "^3.6.0",
-    "solid-js": "^1.4.0"
+    "solid-js": "^1.7.2"
   },
   "devDependencies": {
     "@apollo/client": "3.6.6",
     "@grapes-agency/eslint-config": "^1.6.2",
     "@graphql-typed-document-node/core": "^3.1.1",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@rollup/plugin-typescript": "^8.3.0",
     "@semantic-release/changelog": "^6.0.0",
     "@semantic-release/git": "^10.0.0",
-    "babel-preset-solid": "1.4.4",
     "cz-conventional-changelog": "^3.3.0",
     "graphql": "^15.6.1",
-    "rollup": "^2.58.0",
-    "rollup-plugin-delete": "^2.0.0",
     "semantic-release": "^18.0.0",
-    "solid-js": "1.4.4",
-    "typescript": "^4.4.2"
+    "solid-js": "^1.7.2",
+    "typescript": "^4.4.2",
+    "vite": "^4.4.3",
+    "vite-plugin-dts": "^3.2.0",
+    "vite-plugin-solid": "^2.7.0"
   },
   "prettier": "@grapes-agency/eslint-config/prettier",
   "eslintConfig": {
