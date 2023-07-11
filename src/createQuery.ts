@@ -1,4 +1,4 @@
-import type { WatchQueryOptions, OperationVariables } from '@apollo/client/core'
+import type { WatchQueryOptions, OperationVariables } from '@apollo/client/core/index.js'
 import type { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core'
 import type { Accessor } from 'solid-js'
 import { createResource, onCleanup } from 'solid-js'

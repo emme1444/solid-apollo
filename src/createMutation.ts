@@ -1,5 +1,5 @@
-import { mergeOptions } from '@apollo/client/core'
-import type { DefaultContext, OperationVariables, MutationOptions, FetchResult } from '@apollo/client/core'
+import { mergeOptions } from '@apollo/client/core/index.js'
+import type { DefaultContext, OperationVariables, MutationOptions, FetchResult } from '@apollo/client/core/index.js'
 import type { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core'
 import type { GraphQLError } from 'graphql'
 import type { Accessor } from 'solid-js'

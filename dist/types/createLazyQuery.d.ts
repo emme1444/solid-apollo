@@ -1,4 +1,4 @@
-import type { QueryOptions, OperationVariables } from '@apollo/client/core';
+import type { QueryOptions, OperationVariables } from '@apollo/client/core/index.js';
 import type { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core';
 import type { Accessor } from 'solid-js';
 interface BaseOptions<TData, TVariables> extends Omit<QueryOptions<TVariables, TData>, 'query'> {

@@ -1,8 +1,8 @@
 import { createComponent as S } from "solid-js/web";
 import { createContext as Q, useContext as k, createResource as y, onCleanup as h, createSignal as d, untrack as g } from "solid-js";
 import { createStore as v, reconcile as P } from "solid-js/store";
-import { mergeOptions as O } from "@apollo/client/core";
-import { ApolloClient as G, InMemoryCache as H, gql as J } from "@apollo/client/core";
+import { mergeOptions as O } from "@apollo/client/core/index.js";
+import { ApolloClient as G, InMemoryCache as H, gql as J } from "@apollo/client/core/index.js";
 const A = Q(), D = (o) => S(A.Provider, {
   get value() {
     return o.client;
